@@ -1,0 +1,33 @@
+.cate__main{
+
+}
+.nav__item{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+.nav__item > img{
+    width: 100px;
+    height: 100px;
+    text-align: "center";
+    border-radius: 50px;
+}
+
+.text{
+    color: #000000
+}
+.text::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #c32aa3;
+    transition: width .3;
+  }
+  .text:hover::after{
+    width: 100%;
+    transition: width .3s;
+  }
